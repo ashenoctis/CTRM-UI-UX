@@ -1,0 +1,153 @@
+/*!
+ * =====================================================
+ * Genexis Framework 3.4
+ * Copyright 2012 Ashish Sharma
+ *
+ * v3.4.6 designed by @asharma13.
+ * =====================================================
+ */
+
+/*
+ * Base structure
+ */
+
+body,html{
+  width:100%;
+  height:100%;
+  position: relative;
+  min-height: 100%;
+  font-family: 'Segoe UI Local', 'Segoe UI Web (West European)';
+}
+
+/** In Chrome we can't use the semilight weight of the local web font. Use web fonts instead. **/
+body:not(*:root) {
+  font-family: 'Segoe UI Web (West European)';
+  background-color: #ddd;
+}
+
+.example {
+  font-size: 72px;
+}
+
+.light {
+  font-weight: 100;
+}
+
+.semilight {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Segoe UI Local';
+  src: local('Segoe UI Light');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Local';
+  src: local('Segoe UI Semilight');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Local';
+  src: local('Segoe UI');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Local';
+  src: local('Segoe UI Semibold');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Web (West European)';
+  src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-light.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-light.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Web (West European)';
+  src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semilight.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semilight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Web (West European)';
+  src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Web (West European)';
+  src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  text-align: center;
+  position:relative;
+  font:400 14px/1.5 "Open Sans",sans-serif;
+  color:#ddd;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff; ;
+}
+
+/* Custom default button */
+.btn-default{
+  color: #0a1855;
+  text-decoration: none;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius:5px;
+}
+.btn-default:hover,
+.btn-default:focus {
+  color: #0a1855; 
+  -webkit-box-shadow:0 0 50px rgba(255,255,255,.3);
+  box-shadow:0 0 50px rgba(255,255,255,.3)
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  font-size: 13px;
+  padding: 20px;
+}
+
+.featurette-divider {
+  margin: 50px 0;
+}
+
+/* Thin out the marketing headings */
+.heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
