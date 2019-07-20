@@ -15,57 +15,13 @@ body,html{
   width:100%;
   height:100%;
   position: relative;
-  min-height: 100%;  
+  min-height: 100%;
 }
 
 body {
   text-align: center;
-  font:400 14px/1.5 "Segoe UI", 'Segoe UI Web (West European)',sans-serif;
-  background-color:#e5e5e5;  
-}
-
-.light {
-  font-weight: 100;
-}
-
-.semilight {
-  font-weight: 300;
-}
-
-.regular {
-  font-weight: 400;
-}
-
-.semibold {
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: 'Segoe UI Web (West European)';
-  src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-light.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-light.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Segoe UI Web (West European)';
-  src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semilight.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semilight.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Segoe UI Web (West European)';
-  src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Segoe UI Web (West European)';
-  src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
+  font: 300 14px/1.5 "SegoeUI", sans-serif;
+  background: #e5e5e5 url('https://genexisstudio.com/wp-content/uploads/2016/04/photo-1416339134316-0e91dc9ded92.jpg') no-repeat fixed center; 
 }
 
 /* Links */
@@ -73,6 +29,144 @@ a,
 a:focus,
 a:hover {
   color: #fff; ;
+}
+
+/* ----- fonts ----- */
+@font-face {
+  font-family: "FabricIcons";
+  src: url("../fonts/icons/FabExMDL2.3.36.ttf");
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  src: url("../fonts/Segoe-UI/segoeuil.ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  src: url("../fonts/Segoe-UI/segoeuisl.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  src: url("../fonts/Segoe-UI/segoeui.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  src: url("../fonts/Segoe-UI/SegUIMo.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  src: url("../fonts/Segoe-UI/seguisb.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  src: url("../fonts/Segoe-UI/SegUIMob.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  src: url("../fonts/Segoe-UI/segoeuib.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* ---- Header properties ---- */
+#header{
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px) saturate(125%);
+  background-color: rgba(255,255,255,.5);
+  color: #fff;
+  padding: 0px 0px 0px 10px;
+  z-index: 200;
+}
+
+.headerSection{
+  width: 200px;
+  height: 70px;
+  border-radius: 10px;
+  margin: 15px 7px;
+  padding: 5px 10px;
+  float: left;
+}
+
+.headerTitle{
+  font-weight: 200;
+  text-align: left;
+  font-size: 20px;
+  float: left;
+  line-height: 28px;
+}
+
+.headerIcon{
+  float: right;
+  font-family: "FabricIcons";
+  font-size: 28px;
+  vertical-align: text-top;
+}
+
+.headerItems{
+  float: right;
+  color: #8E8E93;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  vertical-align: middle;
+}
+
+/* ---- Side menu ---- */
+#sideMenu{
+  width: 90%;
+  height: 500px;
+  float: left;
+  text-align: left;
+  position: absolute;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px) saturate(125%);
+  background-color: rgba(191, 191, 191, 0.5);
+  z-index: -10;
+  border-radius: 10px
+}
+
+/* ---- Main COntent ---- */
+#Main{
+  width: 100%;
+  height: 500px;
+  text-align: left;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px) saturate(125%);
+  background-color: rgba(0,0,0,.5);
+  z-index: 0;
+  border-radius: 10px
+}
+
+/* --- Footer --- */
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  font-size: 13px;
+  padding: 20px;
+  opacity: 0.5;
 }
 
 /* Custom default button */
@@ -91,17 +185,6 @@ a:hover {
   box-shadow:0 0 50px rgba(255,255,255,.3)
 }
 
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  color: #fff;
-  font-size: 13px;
-  padding: 20px;
-  opacity: 0.5;
-}
-
 .featurette-divider {
   margin: 50px 0;
 }
@@ -112,3 +195,212 @@ a:hover {
   line-height: 1;
   letter-spacing: -1px;
 }
+
+/* ---- form styles from fluent.css --- */
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search-md],
+input[type=search],
+textarea.form-control {
+  -webkit-appearance: none;
+  border: 1px solid #a9a9a9;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  padding: 0.375rem 0.75rem;
+  outline: none;
+  font: 300 16px/1.5 "SegoeUI", sans-serif;
+  color: #616161; }
+  input[type=text]:focus,
+  input[type=password]:focus,
+  input[type=email]:focus,
+  input[type=url]:focus,
+  input[type=time]:focus,
+  input[type=date]:focus,
+  input[type=datetime-local]:focus,
+  input[type=tel]:focus,
+  input[type=number]:focus,
+  input[type=search-md]:focus,
+  input[type=search]:focus,
+  textarea.form-control:focus {
+    border: 1px solid #a9a9a9;
+    color: #616161;
+    outline: 1px solid #0050c5;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  input[type=text]:disabled,
+  input[type=password]:disabled,
+  input[type=email]:disabled,
+  input[type=url]:disabled,
+  input[type=time]:disabled,
+  input[type=date]:disabled,
+  input[type=datetime-local]:disabled,
+  input[type=tel]:disabled,
+  input[type=number]:disabled,
+  input[type=search-md]:disabled,
+  input[type=search]:disabled,
+  textarea.form-control:disabled {
+    cursor: not-allowed;
+    color: #d2d2d2;
+    border-color: #d2d2d2;
+    background-color: transparent; }
+
+textarea {
+  font-size: 1rem; }
+
+label {
+  margin-bottom: .3rem;
+  -webkit-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+  font-size: 1.1rem; }
+
+input[type="checkbox"], input[type=radio] {
+  position: absolute;
+  left: -9999px;
+  visibility: hidden; }
+
+input[type="checkbox"] + label, input[type=radio] + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none; }
+  input[type="checkbox"] + label:before, input[type=radio] + label:before, input[type="checkbox"] + label:after, input[type=radio] + label:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 1px; }
+
+input[type="checkbox"] + label:before, input[type="checkbox"] + label:after {
+  z-index: 1;
+  -webkit-transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+  -o-transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+  transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s; }
+
+input[type="checkbox"] + label:after {
+  height: 20px;
+  width: 20px; }
+
+input[type="checkbox"] + label:before {
+  border-width: 1px;
+  -webkit-transform: rotateZ(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotateZ(40deg);
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%; }
+
+input[type="checkbox"]:not(:checked) + label:before {
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  left: 6px;
+  top: 10px; }
+
+input[type="checkbox"]:not(:checked) + label:after {
+  background-color: transparent;
+  z-index: 0; }
+
+input[type="checkbox"]:checked + label:before {
+  top: 0;
+  width: 8px;
+  height: 16px;
+  border-color: transparent white white transparent; }
+
+input[type="checkbox"]:checked + label:after {
+  border-color: #0078D7;
+  background-color: #0078D7;
+  z-index: 0; }
+
+input[type="checkbox"]:hover + label:after {
+  border-color: rgba(0, 0, 0, 0.6); }
+
+input[type="checkbox"]:focus + label:after {
+  border-style: dashed;
+  border-color: #000; }
+
+input[type="checkbox"]:indeterminate + label:before {
+  left: -5px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border: 5px solid black;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%; }
+
+input[type="checkbox"]:indeterminate + label:after {
+  border-color: #0078D7; }
+
+input[type="checkbox"]:disabled + label {
+  cursor: not-allowed !important; }
+
+input[type="checkbox"]:disabled:not(:checked) + label:before {
+  background-color: transparent;
+  border-color: #767676; }
+
+input[type="checkbox"]:disabled:not(:checked) + label:after {
+  border-color: transparent;
+  background-color: #767676; }
+
+input[type="checkbox"]:disabled:checked + label:before {
+  background-color: transparent; }
+
+input[type="checkbox"]:disabled:checked + label:after {
+  background-color: #767676;
+  border-color: #767676; }
+
+input[type="checkbox"]:disabled:indeterminate + label:after {
+  border-color: #767676;
+  background-color: transparent; }
+
+input[type="checkbox"]:disabled:indeterminate + label:before {
+  border-color: #767676; }
+
+input[type=radio] {
+  /*Border-color*/ }
+  input[type=radio] + label:before, input[type=radio] + label:after {
+    z-index: 0;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border-width: 0.0938rem;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+  input[type=radio] + label:after {
+    border: none; }
+  input[type=radio]:checked + label:after {
+    background-color: black;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5); }
+  input[type=radio]:checked:disabled + label:after {
+    background-color: #767676; }
+  input[type=radio]:disabled + label {
+    cursor: not-allowed; }
+    input[type=radio]:disabled + label:before {
+      border-color: #767676; }
+  input[type=radio].with-gap-blue:checked + label:before {
+    border-color: #0078D7 !important; }
